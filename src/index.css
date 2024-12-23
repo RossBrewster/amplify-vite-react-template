@@ -1,21 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  background: linear-gradient(180deg, rgb(117, 81, 194), rgb(255, 255, 255));
+  background: #111827;
   display: flex;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   height: 100vh;
-  width: 100vw;
+  width: 100vw; */
   justify-content: center;
   align-items: center;
 }
 
-main {
+/* main {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-}
+} */
 
-button {
+/* button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -62,4 +66,4 @@ li:hover {
 a {
   font-weight: 800;
   text-decoration: none;
-}
+} */
