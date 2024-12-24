@@ -14,11 +14,13 @@ export default function App() {
         <Route
           path="/dashboard"
           element={
-            <Authenticator>
-              <ProtectedRoute>
-                <Dashboard />
-              </ProtectedRoute>
-            </Authenticator>
+            <div className="min-h-screen bg-gray-900 flex justify-center">
+              <Authenticator>
+                <ProtectedRoute>
+                  <Dashboard />
+                </ProtectedRoute>
+              </Authenticator>
+            </div>
           }
         />
       </Routes>

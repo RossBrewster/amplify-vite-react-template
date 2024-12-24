@@ -16,7 +16,7 @@ const Home = () => {
       <div className="w-full bg-gray-900 text-white">
         {/* Navigation */}
         <nav className="w-full bg-gray-900 p-4 relative z-50">
-          <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-between items-center">
             {/* Logo */}
             <div className="flex-1 flex gap-0.5">
               {['bg-pink-400', 'bg-green-400', 'bg-blue-400', 'bg-yellow-400'].map((color, index) => (
@@ -45,9 +45,9 @@ const Home = () => {
         </nav>
 
         {/* Hero Section */}
-        <main className="max-w-7xl mx-auto px-4 pt-16 pb-24">
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 pb-24 sm:pb-32">
           {/* Text Content */}
-          <div className="text-center relative z-40 -mb-40">
+          <div className="text-center relative z-40 mb-0 sm:mb-4 md:mb-8 lg:mb-10">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               The future of learning is here
             </h1>
@@ -64,16 +64,16 @@ const Home = () => {
           <div className="relative">
             {/* Center Sign Up Button with pointer-events-none wrapper */}
             <div className="absolute inset-0 flex justify-center items-center z-40 pointer-events-none">
-              <div className="pointer-events-auto transform -translate-y-12">
+              <div className="pointer-events-auto transform sm:-translate-y-12 md:-translate-y-16 lg:-translate-y-20">
                 <BorderBox 
-                  buttonText={user ? "Go to Dashboard" : "Sign Up"} 
+                  buttonText={user ? "Dashboard" : "Sign Up"} 
                   onClick={handleAuthClick}
                 />
               </div>
             </div>
 
-            {/* Rest of the component remains the same */}
-            <div className="relative w-full aspect-[3/2] z-30">
+            {/* Cube Sculpture */}
+            <div className="relative w-full aspect-[3/2] sm:aspect-[4/3] md:aspect-[3/2] lg:aspect-[16/9] z-30">
               <CubeSculpture />
             </div>
           </div>
